@@ -1,0 +1,3 @@
+# Fitness Tracker Application  
+
+This is a Fitness Tracker application built using Express. It is still an ongoing project, meaning it is not yet finished. So far, I have implemented user registration, login, and logout functionalities, along with a verification code system. The authentication system uses JWT tokens, which are securely sent inside cookies. I have also added multiple middleware functions and utility functions to enhance the application's structure and maintainability. For session management, I have implemented full CRUD operations for sessions. Moving forward, I plan to add an exercise management system to track and organize workout data efficiently.  
