@@ -10,12 +10,6 @@ const SessionSchema = new mongoose.Schema({
     type: Date,
     default: Date.now, // Defaults to the current date if not provided
   },
-  exercises: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: 'Exercise', // Reference to the Exercise model
-    },
-  ],
 });
 
 module.exports = mongoose.model('Session', SessionSchema);

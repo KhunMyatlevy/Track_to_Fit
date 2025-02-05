@@ -18,6 +18,17 @@ const ExerciseSchema = new mongoose.Schema({
     type: Number, // Number of repetitions performed
     required: true,
   },
+  userId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User', // Reference to the User model
+    required: true,
+  },
 });
+
+// Add index on userId for faster querying
+ExerciseSchema.index({ userId: 1 });
+// Add index on sessionId for faster querying
+ExerciseSchema.index({ sessionId: 1 });
+
 
 module.exports = mongoose.model('Exercise', ExerciseSchema);
